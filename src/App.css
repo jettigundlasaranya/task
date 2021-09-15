@@ -1,0 +1,105 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+nav{
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  font-family:sans-serif;
+}
+#menu-bar{
+  background:white;
+  text-align: center;
+  background-color: tomato;
+  height: 290px;
+}
+#menu-bar ul {
+  float:left;
+  display:inline-flex;
+  list-style: none;
+}
+#menu-bar ul li{
+  width:120px;
+  margin:15px;
+  padding:15px;
+}
+#menu-bar ul li a{
+  text-decoration: none;
+  color: white;
+}
+#menu-bar ul li:hover{
+  background: teal;
+  width: 100px;
+  height: 20px;
+}
+.submenu{
+  display: none;
+  border: 2px solid red;
+  /* background: static; */
+  margin-top: 1px;
+}
+#menu-bar ul li:hover .submenu{
+  display: block;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 10px;
+} 
+#menu-bar ul li:hover .submenu ul{
+  display: block;
+  margin:0px;
+}
+#menu-bar ul li:hover .submenu ul li{
+  width:150px;
+  padding:2px;
+  border-bottom: 1px dotted white;
+  background: fixed;
+  text-align: left;
+}
+#menu-bar ul li:hover .submenu ul li a:hover{
+  color:red;
+}
+.submenu1{
+  display: none;
+}
+.hoverme:hover .submenu1{
+  position: absolute;
+  display: block;
+  margin-top: 40px;
+  margin-left:40px;
+  background:red;
+}
