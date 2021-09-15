@@ -1,5 +1,6 @@
-.App {
-  text-align: center;
+#body {
+  background-color:gray;
+  height: 500px;
 }
 
 .App-logo {
@@ -36,17 +37,17 @@
     transform: rotate(360deg);
   }
 }
-nav{
+/* nav{
   background-position: center;
   background-size: cover;
   box-sizing: border-box;
   font-family:sans-serif;
 }
 #menu-bar{
-  background:white;
   text-align: center;
-  background-color: tomato;
-  height: 290px;
+  margin-top: 10px;
+  background-color:white;
+  height:50px
 }
 #menu-bar ul {
   float:left;
@@ -55,36 +56,36 @@ nav{
 }
 #menu-bar ul li{
   width:120px;
-  margin:15px;
-  padding:15px;
+  margin-left:80px;
+  padding:2px;
 }
 #menu-bar ul li a{
   text-decoration: none;
-  color: white;
+  color:black;
 }
 #menu-bar ul li:hover{
   background: teal;
-  width: 100px;
+  width: 50px;
   height: 20px;
 }
 .submenu{
   display: none;
-  border: 2px solid red;
-  /* background: static; */
   margin-top: 1px;
 }
 #menu-bar ul li:hover .submenu{
   display: block;
-  position: absolute;
+  position:absolute;
+  border: 2px solid red;
+  width:250px;
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left:1px;
 } 
 #menu-bar ul li:hover .submenu ul{
   display: block;
   margin:0px;
 }
 #menu-bar ul li:hover .submenu ul li{
-  width:150px;
+  width:120px;
   padding:2px;
   border-bottom: 1px dotted white;
   background: fixed;
@@ -102,4 +103,49 @@ nav{
   margin-top: 40px;
   margin-left:40px;
   background:red;
+} */
+form{
+  background-color: white;
+  width: 400px;
+  overflow: auto;
+  margin-left: 430px;
+  margin-top:90px;
+  padding: 13px;
+  box-shadow: 1px 1px 1px 3px grey;
+}
+#div1{
+  margin: 30px;
+}
+#Categoryname{
+  width: 200px;
+  height: 25px;
+}
+#selectd{
+  width: 208px;
+  height: 31px;
+}
+.addbtn{
+  width: 207px;
+    height: 29px;
+    background: blueviolet;
+}
+.dropdown-menu{
+  display: block;
+}
+
+.dropdown-menu-sub{
+  width: 100px;
+  min-width: 10rem;
+  padding: .5rem 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+  position: absolute;
+  left: 130px;
 }
